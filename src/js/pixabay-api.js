@@ -13,7 +13,7 @@ export const getImages = searchCategory => {
 
   return fetch(url).then(res => {
     if (!res.ok) {
-      throw new Error(response.statusText);
+      throw new Error(res.statusText);
     }
     return res.json();
   });

@@ -23,7 +23,7 @@ queryEl.searchForm.addEventListener(`submit`, e => {
 
   const searchQuery = e.target.elements.search.value.trim();
   if (searchQuery === '') {
-    queryEl.galleryElement.innerHTML = '';
+    queryEl.galleryEl.innerHTML = '';
     e.target.reset();
     iziToast.warning({
       title: `Warning`,
